@@ -4,8 +4,8 @@ var leaf;
 
 var chooseHeight;
 
-var div = document.getElementById("submitButton");
- div.addEventListener("click", function(){
+var clicked = document.getElementById("submitButton");
+ clicked.addEventListener("click", function(){
   // Pull input from user
   let chooseHeightString = document.getElementById("height-input").value;
   leaf = document.getElementById("char-input").value;
