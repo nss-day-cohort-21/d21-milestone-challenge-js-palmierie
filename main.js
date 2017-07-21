@@ -13,22 +13,22 @@ var entered = document.getElementById("form");
 
   function pullInput() {
 
-    if (chooseHeight == ""|| chooseHeight == NaN|| leaf === ""){
-      alert("You must enter a number in both fields");
+    
+    // Pull input from user
+    let chooseHeightString = document.getElementById("height-input").value;
+    leaf = document.getElementById("char-input").value;
+    realLeaf = document.getElementById("char-input").value;
+
+      
+    if (chooseHeight == ""|| chooseHeight !== NaN|| leaf === ""){
+      alert("You must enter a number in the first field and any character in the second field");
       console.log("did not work");
     
     } else {
-      console.log('height & char', chooseHeight, leaf);
       // Run Program Function
-    
-      // Pull input from user
-      let chooseHeightString = document.getElementById("height-input").value;
-      leaf = document.getElementById("char-input").value;
-      realLeaf = document.getElementById("char-input").value;
 
       // Change input from string into number
       chooseHeight = parseInt(chooseHeightString);
-      
       console.log('height', chooseHeight, "Character", leaf);
       
       for (var i = 0; i < chooseHeight; i++){
